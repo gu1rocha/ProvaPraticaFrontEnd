@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prova Prática Front-End</title>
+
+    <link rel="stylesheet" href="./assets/css/inicialize.css">
+
+    <link rel="stylesheet" href="./loading/style.css">
+    <link rel="stylesheet" href="./messageBox/assets/css/style.css">
+
+    <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+<body>
+    <main>
+        <form class="formulario">
+            <div class="input_box">
+                <div class="form_group">
+                    <label for="name">Nome</label>
+                    <input type="text" name="name" id="name" required>
+                </div>
+    
+                <div class="form_group">
+                    <label for="email">E-mail</label>
+                    <input type="email" name="email" id="email" required>
+                </div>
+    
+                <div class="form_group">
+                    <label for="gender" class="select">Gênero</label>
+                    <select name="gender" id="gender">
+                        <option value="male">Masculino</option>
+                        <option value="female">Feminino</option>
+                    </select>
+                </div>
+    
+                <div class="form_group">
+                    <label for="status" class="select">Status</label>
+                    <select name="status" id="status">
+                        <option value="active">Ativo</option>
+                        <option value="inactive">Inativo</option>
+                    </select>
+                </div>
+            </div>
+            <button class="novo_registro" type="submit">Novo Registro</button>
+        </form>
+        <div class="table">
+            <table>
+                <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>NOME</th>
+                        <th>EMAIL</th>
+                        <th>AÇÕES</th>
+                    </tr>
+                </thead>
+                <tbody></tbody>
+            </table>
+        </div>
+    </main>
+    <script src="./loading/script.js"></script>
+    <script src="./assets/js/uteis.js"></script>
+    <script src="./messageBox/assets/js/script.js"></script>
+    <script src="./assets/js/script.js"></script>
+</body>
+</html>
